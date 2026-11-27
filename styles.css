@@ -1,0 +1,141 @@
+* { box-sizing: border-box; }
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: #eaf3ff;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: clamp(20px, 6vw, 35px);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.67);
+    box-shadow: 0 6px 25px rgba(30, 64, 175, 0.15);
+    text-align: center;
+}
+
+.logosenac img {
+    display: block;
+    width: min(180px, 100%);
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0 auto 20px;
+    border: 4px solid #2060a9;
+    border-radius: 50%;
+    background: white;
+    object-fit: contain;
+}
+
+h1 {
+    margin: 0 0 8px;
+    color: #a54b00;
+    font-size: 30px;
+}
+
+h2 {
+    margin: 20px 0 15px;
+    color: #003b71;
+    font-size: 19px;
+}
+
+.subtitulo {
+    margin: 0 0 25px;
+    color: #475569;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    background: white;
+    color: inherit;
+    font-size: 15px;
+}
+
+:focus-visible {
+    outline: 2px solid #0072bc;
+    outline-offset: 2px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: #d7dae1;
+    color: #1e293b;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: #2060a9;
+    color: white;
+}
+
+button:hover { opacity: 0.85; }
+
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.erro { color: #b91c1c; }
+
+.demonstracao {
+    color: #475569;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #eaf4fb;
+    color: #003b71;
+    overflow-wrap: anywhere;
+}
+
+#resultado h2 { margin-top: 0; }
+
+#mensagem:empty,
+#resultado:empty {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 12px;
+}
